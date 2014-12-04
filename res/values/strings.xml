@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HTA</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="departureStopName">Departure:</string>
+    <string name="destinationStopName">Destination:</string>
+    <string name="executeSearch">GO</string>
+    <string name="advancedOptions">Advanced Options</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_route_results_list">HTA: Search Results</string>
+    <string name="title_activity_route_graph">HTA: Route Graph</string>
+    <string name="title_activity_route_info">HTA: Route Information</string>
+    <string name="title_activity_route_results_tab">HTA: Search Results</string>
+    <string name="title_activity_route_results">HTA: Search Results</string>
+    <string name="gps_disabled_description">Please enable GPS before performing this action. Do you want to enable GPS now?</string>
+    <string name="title_activity_contacts">HTA: Contacts</string>
+    <string name="messageEmptyContactList">No addresses were found in the contacts book</string>
+    <string name="messageEmptyResultsList">No results are available</string>
+    <string name="positionNotSpecified">Position not specified</string>
+    <string name="egKonemies">e.g. Konemies</string>
+    <string name="egKitarakuja">e.g. Kitarakuja 3</string>
+    <string name="hintFrom">From</string>
+    <string name="hintTo">To</string>
+    <string name="title_activity_main">HTA: Home</string>
+    <string name="title_activity_route_search">HTA: Search</string>
+    <string name="earlierResults">Earlier</string>
+    <string name="laterResults">Later</string>
+    <string name="startTracking">Track Position</string>
+    <string name="stopTracking">Stop Tracking</string>
+
+    <string-array name="optimizations">
+        <item>Normal (no optimizations)</item>
+        <item>Fastest</item>
+        <item>Least transfers</item>
+        <item>Least walking</item>
+    </string-array>
+
+     <string name="title_activity_view_locations">ViewLocations</string>
+    <string name="title_activity_edit_categories">EditCategories</string>
+    <string name="title_activity_edit_locations">EditLocations</string>
+    <string name="title_activity_create_new_location">CreateNewLocation</string>
+    <string name="create_item_title">name :</string>
+    <string name="create_item_street">address :</string>
+    <string name="create_item_gps">GPS :</string>
+    <string name="create_item_pic"></string>
+    <string name="create_item_des">Detail :</string>
+    <string name="create_category_title_hint">eg. Bar/Shopping Center/Friends House</string>
+    <string name="create_item_title_hint">eg. Railway Station </string>
+    <string name="create_item_street_hint">eg. Servin Maijan Tie</string>
+    <string name="create_item_gps_hint">Click GPS </string>
+    <string name="create_item_pic_hint">Click camera</string>
+    <string name="create_item_des_hint">eg. Ticket here is Cheep!</string>
+    <string name="create_item_submit_button">done</string>
+    <string name="title_activity_create_new_category">CreateNewCategory</string>
+    <string name="title_activity_dis_play_map_test">DisPlayMapTest</string>
+    <string name="title_activity_map_test">MapTest</string>
+    <string name="title_activity_route_selection">RouteSelectionActivity</string>
+    <string name="title_activity_update_category">UpdateCategory</string>
+    <string name="title_activity_update_location">UpdateLocation</string>
+
+</resources>

@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutRouteInfoListItemLine"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+   <TextView 
+       android:id="@+id/textLine"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:text="TextView"/>
+   <ImageView 
+       android:id="@+id/imageLine"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/ic_maps_indicator_current_position"
+       android:layout_gravity="center_vertical"
+       android:visibility="gone"
+       />"
+
+    
+
+</LinearLayout>

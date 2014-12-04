@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="red">#FF0000</drawable>
+    <drawable name="white">#FFFFFF</drawable>    
+    <drawable name="dark_back">#333333</drawable>
+    <drawable name="dark_background">#444444</drawable>
+    
+    <drawable name="yellow">#e9bc39</drawable>
+    <drawable name="light_yellow">#f2d856</drawable>
+    <drawable name="dark_orange">#ce491d</drawable>
+    <drawable name="orange">#e57148</drawable>
+    <drawable name="light_orange">#ec9962</drawable>    
+    <drawable name="very_light_orange">#eb9172</drawable>    
+    <drawable name="holo_dark_blue">#ff33b5e5</drawable>
+    <drawable name="round_white_border">#bebfc1</drawable>    
+    <drawable name="subtitle_color">#BEBEBE</drawable>    
+</resources>

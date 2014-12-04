@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     >
+     
+    <ImageView
+        android:id="@+id/my_item_pic"
+        android:layout_width="@dimen/item_pic_size"  
+        android:layout_height="@dimen/item_pic_size"
+        android:background="@layout/rounded_corner_transparent"
+        android:scaleType="center"
+        
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/item_margin_size"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/item_margin_size"
+        android:layout_marginBottom="@dimen/item_margin_size"
+        android:onClick="popToast"
+    />
+    	
+    <TextView
+   	    android:id="@+id/my_item_title"   
+        android:layout_height="wrap_content"   
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/item_title_size"
+        android:textColor="@drawable/white"
+        
+        android:layout_toRightOf="@id/my_item_pic"
+        android:layout_marginLeft="@dimen/item_margin_size"     	
+   	/>   	
+   	
+    
+   	<TextView
+   	    android:id="@+id/my_item_street"   
+        android:layout_height="wrap_content"   
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/item_subtitle_size" 
+        android:textColor="@drawable/subtitle_color"
+        
+        android:layout_toRightOf="@id/my_item_pic"
+        android:layout_below="@id/my_item_title"
+        android:layout_alignLeft="@id/my_item_title"
+           	
+   	/>
+   	
+   	<TextView
+   	    android:id="@+id/my_item_id"   
+        android:layout_height="wrap_content"   
+        android:layout_width="wrap_content" 
+        
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/item_margin_size"    	
+        android:visibility="gone"
+   	/>
+   	
+    <TextView
+        android:id="@+id/my_item_geo"   
+        android:layout_height="wrap_content"   
+        android:layout_width="wrap_content"   
+        
+        android:layout_below="@id/my_item_id"
+        android:layout_alignRight="@id/my_item_id"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+   	/>
+    
+
+    	
+    <TextView
+        android:id="@+id/my_item_description"   
+        android:layout_height="wrap_content"   
+        android:layout_width="wrap_content"   
+        android:visibility="gone"
+   	/>
+    
+</RelativeLayout>

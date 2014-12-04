@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewCategories" 
+    >
+
+    <ListView  
+        android:id="@+id/edit_list_of_categories"  
+        android:background="@layout/rounded_corner_transparent"
+        android:layout_margin="@dimen/activity_vertical_margin" 
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"
+        android:divider="@drawable/round_white_border"
+        android:dividerHeight="@dimen/list_divide_border"/> 
+
+</RelativeLayout>

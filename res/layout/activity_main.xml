@@ -1,0 +1,37 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity" >
+
+        <!-- android:background="@drawable/dark_back" -->
+
+        <Button
+            android:id="@+id/buttonMainSearch"
+            style="@style/MainWindowButton"
+            android:layout_marginTop="20dp"
+            android:background="@color/search_item_background_color" />
+
+        <Button
+            android:id="@+id/buttonMainHome"
+            style="@style/MainWindowButton"
+            android:layout_marginTop="20dp"
+            android:background="@color/home_item_background_color" />
+
+        <Button
+            android:id="@+id/buttonMainManage"
+            style="@style/MainWindowButton"
+            android:layout_marginTop="20dp"
+            android:background="@color/manage_item_background_color" />
+    </LinearLayout>
+
+</ScrollView>

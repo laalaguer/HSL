@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RouteResultsActivity" >
+
+    <LinearLayout
+        android:id="@+id/routeResultsFragments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+		<fragment
+        android:id="@+id/fragmentRouteInfo"
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        class="fi.aalto.hta.RouteInfoListFragment" />
+		<fragment
+        android:id="@+id/fragmentRouteGraph"
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        class="fi.aalto.hta.RouteGraphFragment" />
+        <!-- <fragment
+        android:id="@+id/fragmentRouteGraph"
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        class="fi.aalto.hta.RouteInfoListFragment" /> -->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Track Position" />
+
+</LinearLayout>

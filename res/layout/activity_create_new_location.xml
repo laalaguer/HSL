@@ -1,0 +1,209 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CreateNewLocation" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- Get GPS of current place -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/item_margin_size"
+            android:background="@layout/rounded_corner_transparent"
+            android:padding="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/create_item_gps_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:drawableLeft="@drawable/white_device_access_location"
+                android:onClick="fetchGeo"
+                android:text="@string/create_item_gps"
+                android:textAllCaps="true"
+                android:textSize="@dimen/item_title_size" />
+
+            <TextView
+                android:id="@+id/create_item_gps_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/item_margin_size"
+                android:layout_toRightOf="@id/create_item_gps_label"
+                android:drawableLeft="@drawable/white_arrow_left"
+                android:drawablePadding="@dimen/item_margin_size"
+                android:hint="@string/create_item_gps_hint"
+                android:textSize="@dimen/item_title_size" />
+        </RelativeLayout>
+
+        <!-- Type in Title of place -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/item_margin_size"
+            android:background="@layout/rounded_corner_transparent"
+            android:padding="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/create_item_title_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/white_content_edit"
+                android:text="@string/create_item_title"
+                android:textAllCaps="true"
+                android:textSize="@dimen/item_title_size" />
+
+            <EditText
+                android:id="@+id/create_item_title_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/item_margin_size"
+                android:layout_toRightOf="@id/create_item_title_label"
+                android:hint="@string/create_item_title_hint"
+                android:inputType="text" />
+        </RelativeLayout>
+
+        <!-- Type in Address of place -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/item_margin_size"
+            android:background="@layout/rounded_corner_transparent"
+            android:padding="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/create_item_street_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:drawableLeft="@drawable/white_location_place"
+                android:onClick="fetchAddress"
+                android:text="@string/create_item_street"
+                android:textAllCaps="true"
+                android:textSize="@dimen/item_title_size" />
+
+            <EditText
+                android:id="@+id/create_item_street_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/item_margin_size"
+                android:layout_toRightOf="@id/create_item_street_label"
+                android:hint="@string/create_item_street_hint"
+                android:inputType="text" />
+        </RelativeLayout>
+
+        <!-- Give picture of place -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/item_margin_size"
+            android:background="@layout/rounded_corner_transparent"
+            android:padding="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/create_item_pic_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:drawableLeft="@drawable/white_device_access_camera"
+                android:onClick="invokeCamera"
+                android:text="@string/create_item_pic"
+                android:textAllCaps="true"
+                android:textSize="@dimen/item_title_size" />
+
+            <ImageView
+                android:id="@+id/create_item_pic"
+                android:layout_width="@dimen/item_pic_size"
+                android:layout_height="@dimen/item_pic_size"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@layout/rounded_corner_transparent"
+                android:scaleType="center"
+                android:src="@drawable/white_help" />
+
+            <TextView
+                android:id="@+id/create_item_pic_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/item_margin_size"
+                android:layout_toLeftOf="@id/create_item_pic"
+                android:layout_toRightOf="@id/create_item_pic_label"
+                android:drawableLeft="@drawable/white_arrow_left"
+                android:drawablePadding="@dimen/item_margin_size"
+                android:hint="@string/create_item_pic_hint"
+                android:textSize="@dimen/item_title_size" />
+        </RelativeLayout>
+
+        <!-- Type in description of place -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/item_margin_size"
+            android:background="@layout/rounded_corner_transparent"
+            android:padding="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/create_item_des_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/white_description"
+                android:text="@string/create_item_des"
+                android:textAllCaps="true"
+                android:textSize="@dimen/item_title_size" />
+
+            <EditText
+                android:id="@+id/create_item_des_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/item_margin_size"
+                android:layout_toRightOf="@+id/create_item_des_head"
+                android:drawablePadding="@dimen/item_margin_size"
+                android:hint="@string/create_item_des_hint"
+                android:inputType="text" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/item_margin_size"
+            android:onClick="createLocation"
+            android:padding="@dimen/item_margin_size"
+            android:text="@string/create_item_submit_button"
+            android:textAllCaps="true"
+            android:textSize="@dimen/item_title_size" />
+        <!-- android:background="@layout/rounded_corner_transparent" -->
+    </LinearLayout>
+</ScrollView>

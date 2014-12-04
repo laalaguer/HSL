@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <CheckBox
+        android:id="@+id/nest_edit_item_category_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:soundEffectsEnabled="true"
+        android:checked="false"
+       	android:focusable="false"
+      	android:focusableInTouchMode="false"
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/item_margin_size"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/item_margin_size"
+        android:layout_marginBottom="@dimen/item_margin_size"
+        
+        android:onClick="checkMyBox"
+        />
+    
+    <TextView 
+        android:id="@+id/nest_edit_item_category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/item_title_size"
+        android:textColor="@drawable/white"
+        
+        
+		android:layout_toRightOf="@id/nest_edit_item_category_checkbox"
+		android:layout_marginLeft="@dimen/item_margin_size"
+		android:layout_alignTop="@id/nest_edit_item_category_checkbox"
+        />
+    
+    <ImageView
+        android:id="@+id/nest_edit_image_to_next"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        
+        
+        android:padding="@dimen/item_inner_padding"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/item_margin_size"
+        android:layout_centerVertical="true"
+        android:onClick="gotoModifyCategory"
+        />
+    <!-- android:background="@layout/rounded_corner_transparent" -->
+    
+        
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nest_edit_item_category_id"
+        
+		android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/nest_edit_image_to_next"
+        android:textColor="@drawable/subtitle_color"
+        android:layout_marginRight="@dimen/item_margin_size"
+        android:visibility="gone"
+        />
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nest_edit_item_category_entries"
+        
+		android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/nest_edit_image_to_next"
+        android:textColor="@drawable/subtitle_color"
+        android:layout_marginRight="@dimen/item_margin_size"
+        
+        />
+
+
+</RelativeLayout>

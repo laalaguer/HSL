@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="popupValues">
+        <item>Map</item>
+        <item>Current</item>
+        <item>Contact</item>
+        <item>Favorite</item>
+    </string-array>
+</resources>

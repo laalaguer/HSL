@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     >
+    
+    <CheckBox 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:soundEffectsEnabled="true"
+        android:checked="false"
+        android:focusable="false"
+        android:id="@+id/nest_edit_item_location_checkbox"
+        
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/item_margin_size"
+        android:layout_centerVertical="true"
+        android:onClick="checkMyBox"
+
+        />
+    
+    
+    <ImageView
+        android:id="@+id/nest_edit_item_location_pic"
+        android:layout_width="@dimen/item_pic_size"  
+        android:layout_height="@dimen/item_pic_size"
+        android:background="@layout/rounded_corner_transparent"
+        android:scaleType="center"
+        
+        android:layout_toRightOf="@id/nest_edit_item_location_checkbox"
+        android:layout_marginTop="@dimen/item_margin_size"
+        android:layout_marginBottom="@dimen/item_margin_size"
+        android:layout_centerVertical="true"
+
+    />
+    	
+    <TextView
+   	    android:id="@+id/nest_edit_item_location_title"   
+        android:layout_height="wrap_content"   
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/item_title_size"
+        android:textColor="@drawable/white"
+        
+        android:layout_toRightOf="@id/nest_edit_item_location_pic"
+        android:layout_marginLeft="@dimen/item_margin_size"     	
+   	/>   	
+   	
+    
+   	<TextView
+   	    android:id="@+id/nest_edit_item_location_street"   
+        android:layout_height="wrap_content"   
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/item_subtitle_size" 
+        android:textColor="@drawable/subtitle_color"
+        
+        android:layout_toRightOf="@id/nest_edit_item_location_pic"
+        android:layout_below="@id/nest_edit_item_location_title"
+        android:layout_alignLeft="@id/nest_edit_item_location_title"	/>
+        
+   
+   	
+   	<TextView
+   	    android:id="@+id/nest_edit_item_location_id"   
+        android:layout_height="wrap_content"   
+        android:layout_width="wrap_content" 
+        
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/item_margin_size"    
+        android:visibility="gone"	
+   	/>
+   	
+   	<TextView
+   	    android:id="@+id/nest_edit_item_location_des"   
+        android:layout_height="wrap_content"   
+        android:layout_width="wrap_content" 
+        
+		android:visibility="gone" 	
+   	/>
+   	
+   	<TextView
+   	    android:id="@+id/nest_edit_item_location_gps"   
+        android:layout_height="wrap_content"   
+        android:layout_width="wrap_content" 
+        
+		android:visibility="gone" 	
+   	/>
+   	
+
+    
+</RelativeLayout>
